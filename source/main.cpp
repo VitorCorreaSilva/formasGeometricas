@@ -1,6 +1,7 @@
 #include <iostream>
 #include "circulo.hpp"
 #include "quadrado.hpp"
+#include "triangulo.hpp"
 
 using namespace std;
 
@@ -18,7 +19,11 @@ int main()
 	cout << quadrado.getArea() << endl;
 	cout << "===============" << endl;
 
+	Triangulo triangulo(4,2);
+	triangulo.setArea(triangulo.calcularArea());
 
+	cout << triangulo.getArea() << endl;
+	cout << "===============" << endl;
 
 	return 0;
 }
